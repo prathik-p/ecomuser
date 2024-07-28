@@ -1,17 +1,23 @@
 .main-page-container {
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-}
-
-.divider-1 {
-    height: 1px;
-    width: 100%;
-    background-color: grey;
+  height: 150vh;
+  width: 100%;
+  background-color: rgb(28, 31, 37);
 }
 
 .main-page-body-container {
-    height: 90%;
-    width: 100%;
-    display: flex;
+  height: calc(94% - 1px);
+  width: 100%;
+  display: flex;
+}
+
+.divider-1 {
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+}
+
+.divider-2 {
+  height: 100%;
+  width: 1px;
+  background-color: grey;
 }

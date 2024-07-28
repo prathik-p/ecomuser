@@ -1,5 +1,97 @@
 .cart-comp-container {
-    height: 100%;
-    width: 30%;
-    background-color: green;
+  height: 100%;
+  width: calc(30% - 1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-border {
+  height: calc(100% - 80px);
+  width: 88%;
+  border: 1px solid white;
+  border-radius: 7px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .cart-header {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+.cart-products {
+  height: calc(100% - 160px);
+  width: 100%;
+}
+
+.cart-index {
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  display: flex;
+  color: white;
+}
+
+.cart-item {
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sno-div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-div {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-divider {
+  height: 100%;
+  width: 1px;
+  background-color: white;
+}
+
+.cart-checkout-button {
+  height: 58px;
+  width: 100%;
+  background-color: grey;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cart-checkout-button:hover {
+  background-color: green;
 }

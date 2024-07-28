@@ -1,5 +1,44 @@
 .navbar-container {
-    height: 10%;
-    width: 100%;
-    background-color: blue;
+  height: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-contents {
+  height: 100%;
+  width: 8%;
+}
+
+.nav-header {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.nav-checkout {
+  height: 100%;
+  width: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .nav-checkout-button {
+    height: 40%;
+    width: 80%;
+    background-color: grey;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 700;
+  }
+
+  .nav-checkout-button:hover {
+    background-color: green;
+  }
 }

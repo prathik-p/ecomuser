@@ -10,6 +10,7 @@ function MainPage() {
       <div className="divider-1"></div>
       <div className="main-page-body-container">
         <ProductsComp />
+        <div className="divider-2"></div>
         <CartComp />
       </div>
     </div>
