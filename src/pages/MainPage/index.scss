@@ -1,13 +1,42 @@
 .main-page-container {
-  height: 150vh;
+  height: 250vh;
   width: 100%;
   background-color: rgb(28, 31, 37);
 }
 
 .main-page-body-container {
-  height: calc(94% - 1px);
+  height: calc(60% - 1px);
   width: 100%;
   display: flex;
+}
+
+.banner-container {
+  height: calc(24% + 1px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .motivashon-text {
+    padding-top: 5%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+  }
+
+  .stockimg-container {
+    height: 80%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-stockimg {
+      height: 100%;
+      width: 80%;
+    }
+  }
 }
 
 .divider-1 {

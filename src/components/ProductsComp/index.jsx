@@ -1,16 +1,16 @@
 import "./index.scss";
 import stockImage from "../../assets/randomstock.png";
-// import { useState } from "react";
+import { useState } from "react";
 
-function ProductsComp() {
-  // const [productValue, setProductValue] = useState(0);
-
-  // const handelSetProductValue = (value, index) => {
-  //   console.log(productsElements.at(index).value);
-  //   setProductValue(productsElements.at(index).value + 1);
-  //   console.log(productsElements.at(index).value);
-  // };
-
+function ProductsComp({
+  handelLocalStorageValue,
+  localStorageValue1,
+  localStorageValue2,
+  localStorageValue3,
+  localStorageValue4,
+  localStorageValue5,
+  localStorageValue6,
+}) {
   const ProductItem = ({ title, value }) => {
     if (value == 0) {
       return (
@@ -19,7 +19,15 @@ function ProductsComp() {
             <img src={stockImage} className="product-image" />
             {title}
             <div className="add-products-container">
-              <button className="products-button">+</button>ADD
+              <button
+                className="products-button"
+                onClick={() => {
+                  handelLocalStorageValue(title, value);
+                }}
+              >
+                +
+              </button>
+              ADD
               <button className="products-button">-</button>
             </div>
           </div>
@@ -43,12 +51,12 @@ function ProductsComp() {
   };
 
   const productsElements = [
-    { title: "Product 1", value: 0, key: 0 },
-    { title: "Product 2", value: 2, key: 1 },
-    { title: "Product 3", value: 0, key: 2 },
-    { title: "Product 4", value: 0, key: 3 },
-    { title: "Product 5", value: 4, key: 4 },
-    { title: "Product 6", value: 0, key: 5 },
+    { title: "Product 1", value: localStorageValue1, key: 0 },
+    { title: "Product 2", value: localStorageValue2, key: 1 },
+    { title: "Product 3", value: localStorageValue3, key: 2 },
+    { title: "Product 4", value: localStorageValue4, key: 3 },
+    { title: "Product 5", value: localStorageValue5, key: 4 },
+    { title: "Product 6", value: localStorageValue6, key: 5 },
   ];
 
   return (
